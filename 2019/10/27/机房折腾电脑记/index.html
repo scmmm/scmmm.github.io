@@ -1,0 +1,276 @@
+<!DOCTYPE html><html data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>机房折腾电脑记 | MMMsc0.618</title><meta name="description" content="机房电脑破败不堪。 查询配置，得  电脑概览 电脑型号  惠普 HP Pro 3335 MT操作系统  Microsoft Windows 10 专业版 (32位)CPU  AMD Athlon(tm) II X2 260 Processor(3200 Mhz)主板  富士康 17A2内存  4.00 GB (   1333 MHz)主硬盘  500 GB (日立 Hitachi HDS72105"><meta name="author" content="MMMsc0.618"><meta name="copyright" content="MMMsc0.618"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://s2.ax1x.com/2019/07/29/e3GtG4.png"><link rel="canonical" href="http://yoursite.com/2019/10/27/%E6%9C%BA%E6%88%BF%E6%8A%98%E8%85%BE%E7%94%B5%E8%84%91%E8%AE%B0/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="机房折腾电脑记"><meta property="og:url" content="http://yoursite.com/2019/10/27/%E6%9C%BA%E6%88%BF%E6%8A%98%E8%85%BE%E7%94%B5%E8%84%91%E8%AE%B0/"><meta property="og:site_name" content="MMMsc0.618"><meta property="og:description" content="机房电脑破败不堪。 查询配置，得  电脑概览 电脑型号  惠普 HP Pro 3335 MT操作系统  Microsoft Windows 10 专业版 (32位)CPU  AMD Athlon(tm) II X2 260 Processor(3200 Mhz)主板  富士康 17A2内存  4.00 GB (   1333 MHz)主硬盘  500 GB (日立 Hitachi HDS72105"><meta property="og:image" content="https://s2.ax1x.com/2019/07/29/e3IJud.jpg"><meta property="article:published_time" content="2019-10-27T13:44:13.000Z"><meta property="article:modified_time" content="2020-07-20T13:41:36.491Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.0.2',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"Press","message_next":"to bookmark this page"},"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-07-20 21:41:36'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.0.2"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="https://cdn.luogu.com.cn/upload/usericon/38636.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">46</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">13</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://s2.ax1x.com/2019/07/29/e3IJud.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">MMMsc0.618</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">机房折腾电脑记</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2019-10-27T13:44:13.000Z" title="Created 2019-10-27 21:44:13">2019-10-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2020-07-20T13:41:36.491Z" title="Updated 2020-07-20 21:41:36">2020-07-20</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/2019/10/27/%E6%9C%BA%E6%88%BF%E6%8A%98%E8%85%BE%E7%94%B5%E8%84%91%E8%AE%B0/#post-comment"><span class="gitalk-comment-count comment-count"></span></a></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>机房电脑破败不堪。</p>
+<p>查询配置，得</p>
+<blockquote>
+<p>电脑概览</p>
+<p>电脑型号  惠普 HP Pro 3335 MT<br>操作系统  Microsoft Windows 10 专业版 (32位)<br>CPU  AMD Athlon(tm) II X2 260 Processor(3200 Mhz)<br>主板  富士康 17A2<br>内存  4.00 GB (   1333 MHz)<br>主硬盘  500 GB (日立 Hitachi HDS721050CLA660 已使用时间: 3725小时)<br>显卡  ATI Radeon HD 4200 (256MB)<br>显示器  惠普 HP LE1902x 32位真彩色 60Hz<br>声卡  Realtek 662 High Definition Audio<br>网卡  Realtek PCIe GbE Family Controller</p>
+</blockquote>
+<p> 于是准备魔改机房配置。</p>
+<p>目前拥有的：</p>
+<p>一个某东400W的电源(150元)</p>
+<p>一个RX 580 （大概1K）</p>
+<p>一个HDMI 转VGA线</p>
+<p>一个X4 630 还在配送中（目前没买硅脂，估计这个要咕）</p>
+<p>一个128G的SATA3SSD，大概130元，主要是买来临时救急，因为实在是太破败了。</p>
+<p>一根4GB内存条（英雄不问出处，内存条不问来路）</p>
+<p>不过应该不会什么大锅，目前的需求： 固态&gt;显卡&gt;内存</p>
+<p>大概会与2019.10.28升级。 </p>
+<p>目前的状况</p>
+<blockquote>
+<p>1.欧阳老师极力反对装CPU</p>
+<p>2.主板PCIE的66W貌似走不满，我这个580又是8pin的，估计超不了</p>
+<p>3.黑厂的固态没用过，不知道能到什么水平（不是未响应就可以了）</p>
+<p>4.不知道有没有必要升级内存。</p>
+<p>5.新U功耗貌似变成95W@2.6Ghz不知道风扇压得住不。</p>
+</blockquote>
+<p>2019-10-29 目前的状况：</p>
+<blockquote>
+<p>1.欧阳老师帮我装好了系统。</p>
+<p>2.目前CPU偷显存，GPU偷内存互不干扰。</p>
+<p>3.这里的SATA只有3.0Gb/s,慢的一批，还是能用（还好买了便宜的）</p>
+<p>4.GPU运行挺不错的，就没有开Radeon Chill</p>
+<p>5.感觉RX 580有点过了。</p>
+</blockquote>
+<p>2019-10-31情况</p>
+<blockquote>
+<p>  CPU到了，良心卖家还送了一点硅脂，（类似于干燥剂那么多）而且卖家还发成了635,净赚0.3*4GHz</p>
+<p>  跑分翻倍了，爽啊。</p>
+<p>  但是CPU这边就分了大概100W，显卡280W难跑满了，现在只有用RadeonChill苟且偷安。</p>
+<p>电脑概览</p>
+<p>电脑型号  惠普 HP Pro 3335 MT<br>操作系统  Microsoft Windows 10 企业版 LTSC (64位)<br>CPU  AMD Athlon(tm) II X4 635 Processor(2900 Mhz)<br>主板  富士康 17A2<br>内存  4.00 GB (   1333 MHz)<br>主硬盘  130 GB (  201907300822 已使用时间: 10小时)<br>显卡  AMD Radeon RX 580 2048SP (8192MB)<br>显示器  惠普 HP LE1902x 32位真彩色 60Hz<br>声卡  Realtek 662 High Definition Audio<br>网卡  Realtek PCIe GBE Family Controller</p>
+</blockquote>
+<p>2019-11-8情况</p>
+<blockquote>
+<p>  内存2+4升级成4+4</p>
+</blockquote>
+<p>双11没忍住……</p>
+<blockquote>
+<p>  内存买了2*16G</p>
+<p>  DP转接线又买了一根</p>
+<p>  买了HP EX950 500G(神仙主控鸟枪变大炮)和一个东芝的SATA3 500G（MLC存重要文件)</p>
+<p>  R7 1700+MSI B450M 这个真的香炸，才1099元，而且还85折。</p>
+</blockquote>
+<p>2019.11.13</p>
+<blockquote>
+<p>  李哥说我这是一个服务器</p>
+<p>  李哥说我不如学修电脑</p>
+</blockquote>
+<p>2019-11-14 情况</p>
+<blockquote>
+<p>  板U没到</p>
+<p>  固态和DP转接线到了。</p>
+<p>  内存到了</p>
+</blockquote>
+<p>2019-11-29情况</p>
+<blockquote>
+<p>8C16T  该U体质还可以（1.45V@4.2Ghz，原装散热器大概74左右</p>
+</blockquote>
+<p>2019-12-6情况</p>
+<blockquote>
+<p>李哥说我要是还有空间还会组第四个显示器</p>
+</blockquote>
+<p>2020-1-13</p>
+<blockquote>
+<p>cyx 为了节约1MB,于是提前解压iso,然后键盘成了他最智能的设备。</p>
+<p>MMM看到后感到同情，施舍了一个固态使用权（12h）于是cyx得以复兴（还有爱奇艺等软件）</p>
+</blockquote>
+<p>2020-1-14</p>
+<blockquote>
+<p>于是MMM今天早上启动的时候忘了秘钥在这个固态上，导致win挂了。</p>
+<p>苦战一小时，结果最后插上老毛桃直接好了。</p>
+</blockquote>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">MMMsc0.618</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://yoursite.com/2019/10/27/%E6%9C%BA%E6%88%BF%E6%8A%98%E8%85%BE%E7%94%B5%E8%84%91%E8%AE%B0/">http://yoursite.com/2019/10/27/%E6%9C%BA%E6%88%BF%E6%8A%98%E8%85%BE%E7%94%B5%E8%84%91%E8%AE%B0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://s2.ax1x.com/2019/07/29/e3IJud.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2019/11/07/M%E8%AF%AD%E8%A8%80/"><img class="prev-cover" data-lazy-src="https://s2.ax1x.com/2019/07/29/e3Id4f.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">M语言</div></div></a></div><div class="next-post pull-right"><a href="/2019/10/26/DEV-CPP%E6%8A%98%E8%85%BE%E8%AE%B0/"><img class="next-cover" data-lazy-src="https://s2.ax1x.com/2019/07/29/e3IZu9.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">DEV-C++折腾记</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By MMMsc0.618</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  var script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    $.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js', function () {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk({
+      clientID: '3a13034e5402e6217533',
+      clientSecret: '0f9e4eaf2a437c139a6d63e6163c4bd417eb9d55',
+      repo: 'scmmm.github.io',
+      owner: 'scmmm',
+      admin: ['scmmm'],
+      id: '3cb405d8179ebdbe8436fc2630f3c827',
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: false,
+      pagerDirection: 'last',
+      createIssueManually: true,
+      updateCountCallback: commentCount
+    })
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    $.getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js', initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
