@@ -17,11 +17,24 @@
     
     
     <entry>
+      <title>网络流基础</title>
+      <link href="/2020/10/03/%E7%BD%91%E7%BB%9C%E6%B5%81%E5%9F%BA%E7%A1%80/"/>
+      <url>/2020/10/03/%E7%BD%91%E7%BB%9C%E6%B5%81%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h3 id="无源汇上下界可行流"><a href="#无源汇上下界可行流" class="headerlink" title="无源汇上下界可行流"></a>无源汇上下界可行流</h3><p>设每个点  $\delta(t)=f_{(N^+(t),t)}-f_{(N^-(t),t)}$ </p><p>然后每条边的流量 $flownew=flowmax-flowmin$</p><p>此时若 $\delta(t)&lt;0$ 表示 $t$ 流出不足，因此它的出边要增加流量，连一条 $t,T$ 的边,容量为$\delta(t)$</p><p>若$ \delta(t)=0$ 流量守恒，不管</p><p>若$\delta(t)&gt;0$ 那么说明流出过多，因此要增加入邻域的流量，连一条$S,t$ 的边</p><p>若 $S$ 到 $T$ 满流，说明可以实现流量平衡</p><p>为什么可行呢，一个点不可能同时和 $S,T$ 相连，并且与 $S,T$ 相连的边都可以实现并且我们在新图已经忽略这些边带来的贡献（必然贡献进入答案），因此在新图中需要增加一些边的流量才能实现这这张图的流量平衡，而判断流量平衡的只需要满足这些不满足流量平衡的点（与 $S,T$ 相连 ）平衡（即 $S,T$ 满流） 即可。</p><h3 id="有源汇上下界可行流"><a href="#有源汇上下界可行流" class="headerlink" title="有源汇上下界可行流"></a>有源汇上下界可行流</h3><p>连接 $T,S$ 变为无源汇即可</p><h3 id="有源汇上下界最大流"><a href="#有源汇上下界最大流" class="headerlink" title="有源汇上下界最大流"></a>有源汇上下界最大流</h3><p>首先求得可行流，接着在残量网络上面跑一次最大流即可。</p><p>这个结论很显然了（</p><h3 id="有源汇上下界最小流"><a href="#有源汇上下界最小流" class="headerlink" title="有源汇上下界最小流"></a>有源汇上下界最小流</h3><p>考虑刚才的那个过程，我们找到的是符合我们贪心地构造得到的最小流，在满足边流量符合条件的前提下，如果不是最优就说明存在两个点 $u,v$ 满足$f(u,v)&gt;0\&amp;\&amp;f(v,u)&gt;0$ 因此从 $T$ 跑一遍最大流减去即可。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>que</title>
       <link href="/2020/10/02/que/"/>
       <url>/2020/10/02/que/</url>
       
-        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">WWelelcome to</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="b2df411eec798f367c6cfb7106ce7ab019c7ad36ba69826ea999ac81b56d7f7a">964f3f679f90973cb087b7b34acd836e</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">WWelelcome to</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="3fda274f24b144b24b824724a34918d2e609536b21e3f804acdb0f2c0b544e00">eddc25016253c3897361a79207fd5778335b07abda73f68983d603f140cbd57a4bf9aa24c59d0aad53f36ca79f0004ab6b841ad96a3b4a526229f508dc5442c556e8fb7d09608d982abb92a01fe2e46370e028bad64e699465c2b3b8c50d234a497d1700853cb5b55bde793fc9c4ef6d3de9f3d1cb526e7855dc31b15968831c42f9facf79bddba4ce80ad24d2bd095e6359f815461928a7d6381bf0b562dfdf</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       
       
       
